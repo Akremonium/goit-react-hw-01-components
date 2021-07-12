@@ -1,8 +1,11 @@
 .statistics {
-  width: calc((100% - 20px) / 4);
-  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 10px;
   overflow: hidden;
+
+  & + .statistics {
+    margin-top: 15px;
+  }
 }
 
 .title {

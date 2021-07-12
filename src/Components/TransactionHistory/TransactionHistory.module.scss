@@ -1,0 +1,33 @@
+.transactionHistory {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  text-align: center;
+  border-collapse: collapse;
+  overflow: hidden;
+}
+
+thead {
+  border-bottom: 1px solid lightgrey;
+}
+
+th {
+  padding: 15px;
+  background-color: hotpink;
+  text-transform: uppercase;
+
+  & + th {
+    border-left: 1px solid lightgrey;
+  }
+}
+
+tbody tr:nth-child(even) {
+  background-color: skyblue;
+}
+
+td {
+  text-transform: capitalize;
+
+  & + td {
+    border-left: 1px solid lightgrey;
+  }
+}
